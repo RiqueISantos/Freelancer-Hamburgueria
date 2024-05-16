@@ -1,0 +1,30 @@
+footer {
+    width: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff3131;
+}
+
+#cart {
+    display: flex;
+    align-items: center;
+    gap: 5;
+    font-weight: bold;
+    background-color: #ff3131;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+i {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 0.5rem;
+}

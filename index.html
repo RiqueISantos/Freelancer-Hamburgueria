@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>A melhor Hamburgueria!</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="img/hamb-1.png" alt="Logo da Hamburguer">
+            <h1>Red Burguer</h1>
+            <span>Rua Escorpião, 12, São Paulo, SP</span>
+            <span id="opening-hours">Seg á Dom - 18:00 as 22:00</span>
+
+        </div>
+    </header>
+
+
+
+    <div id="menu">
+        <h2>Conheça nosso menu</h2>
+        <main>
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-1.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Cheese Burguer Duplo</p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 35,00</p>
+                        <button data-name="Cheese Burguer Duplo" data-price="35.00" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-2.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Cheese Bacon</p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 48,00</p>
+                        <button data-name="Cheese Bacon" data-price="48.00" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-3.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Cheese Duplo</p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 30,00</p>
+                        <button data-name="Cheese Duplo" data-price="30.00" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-4.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Chicken Burguer</p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 39,90</p>
+                        <button data-name="Chicken Burguer" data-price="39.90" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-5.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Tusty Burguer </p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 40,00</p>
+                        <button data-name="Tusty Burguer" data-price="40.00" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-6.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Big Burguer Tusty Duplo</p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 45,00</p>
+                        <button data-name="Big Burguer Tusty Duplo" data-price="45.00" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-7.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Onion Burguer</p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 25,00</p>
+                        <button data-name="Onion Burguer" data-price="25.00" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="items-menu">
+                <div class="image-items">
+                    <img src="img/hamb-8.png" alt="Hamburguer">
+                </div>
+
+                <div class="description-item">
+                    <p class="items-name">Cheese Salad</p>
+                    <p>Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da
+                        casa</p>
+
+                    <div class="price-item">
+                        <p>R$ 38,50</p>
+                        <button data-name="Cheese Salad" data-price="38.50" class="add-cart-btn">
+                            <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="bebidas">
+            <div id="menu-bebidas">
+                <h2>Bebidas</h2>
+                <div class="items-menu">
+                    <div class="image-items">
+                        <img src="img/refri-1.png" alt="Refrigerante">
+                    </div>
+
+                    <div class="description-item">
+                        <p class="items-name">Coca-Cola</p>
+
+                        <div class="price-item">
+                            <p>R$ 10,00</p>
+                            <button data-name="Coca-Cola" data-price="10.00" class="add-cart-btn">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu-bebidas">
+                <div class="items-menu">
+                    <div class="image-items">
+                        <img src="img/refri-2.png" alt="Refrigerante">
+                    </div>
+
+                    <div class="description-item">
+                        <p class="items-name">Guaraná</p>
+
+                        <div class="price-item">
+                            <p>R$ 10,00</p>
+                            <button data-name="Guaraná" data-price="10.00" class="add-cart-btn">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="modal-container">
+        <div id="items-modal">
+            <h2>Meu carrinho</h2>
+            <div id="cart-items"></div>
+            <p id="total">Total: <span id="cart-total">0.00</span></p>
+            <p id="address">Endereço de entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="input-address">
+            <p id="address-warn">Digite seu endereço completo!</p>
+
+            <div id="container-btn">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn">Finalizar pedido</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer id="user-cart">
+        <button id="cart">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus"></i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+
+}
+
+#menu {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#menu h2 {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.items-menu {
+    display: flex;
+}
+
+.image-items img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.image-items img:hover {
+    transform: scale(1.1);
+}
+
+.items-menu .description-item p {
+    font-size: 1.2rem;
+}
+
+#menu .items-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.items-menu .description-item {
+    margin-left: 10px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+    margin-top: 25px;
+}
+
+#cart-items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 0.7rem;
+}
+
+.containerModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerModal .nameModal {
+    font-weight: 500;
+}
+
+.containerModal .elementModal {
+    margin-bottom: 1.2rem;
+}
+
+.containerModal .priceModal {
+    margin-top: 0.5rem;
+}
+
+.containerModal button {
+    border: 1px solid #000;
+    padding: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.containerModal button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.price-item p {
+    font-weight: bold;
+}
+
+.price-item button {
+    background-color: rgb(17 24 39);
+    border: none;
+    padding: 0 1.125rem 0 1.125rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.price-item i {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+#menu-bebidas .price-item {
+    gap: 30px;
+}
+
+#menu-bebidas h2 {
+    text-align: start;
+    margin-bottom: 1.2rem;
+    margin-left: 10px;
+}
+
+#menu-bebidas .description-item p {
+    font-size: 1.2rem;
+}
+
+#menu-bebidas {
+    margin-top: 2rem;
+    padding: 0 5px 0 5px;
+}
+
+#bebidas {
+    padding: 0 0.3rem 0 0.3rem;
+}
+
+#bebidas {
+    margin-bottom: 3rem;
+}
+
+.warn {
+    border: 1px solid rgb(236, 36, 36);
+}
+
+
+
+
+@media(min-width: 375px) {
+    .items-menu .price-item {
+        margin-top: 5px;
+    }
+
+    #menu {
+        padding: 5px;
+    }
+
+    .items-menu .description-item p {
+        font-size: 0.9rem;
+    }
+
+    #menu-bebidas .description-item p {
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width: 320px) {
+    .items-menu .description-item p {
+
+        font-size: 0.8rem;
+    }
+
+    .items-menu .price-item {
+        margin-top: 3px;
+    }
+
+    #menu {
+        padding: 5px;
+    }
+
+    .items-menu .price-item button {
+        background-color: rgb(17 24 39);
+        border: none;
+        padding: 0 0.8rem 0rem 0.8rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 300ms;
+    }
+
+    #menu-bebidas .description-item p {
+        font-size: 1rem;
+    }
+
+}
+
+@media(min-width: 425px) {
+    .description-item p {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media(min-width:768px) {
+    .items-menu .description-item p {
+        font-size: 1.1rem;
+    }
+
+    .price-item p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media(min-width:1024px) {
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+        padding: 20px;
+    }
+
+    #menu .items-name {
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+    .items-menu {
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .items-menu .description-item p {
+        font-size: 0.95rem;
+    }
+
+    #bebidas {
+        padding: 0 1rem 0 1rem;
+    }
+
+    #menu-bebidas .description-item p {
+        font-size: 1.3rem;
+    }
+
+    #bebidas {
+        margin-bottom: 4rem;
+    }
+
+    .items-menu .price-item button {
+        background-color: rgb(17 24 39);
+        border: none;
+        padding: 0 1rem 0 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 300ms;
+    }
+}
+
+@media(min-width:1444px) {
+    #menu {
+        width: 90%
+    }
+
+    .items-menu .description-item p {
+        font-size: 1.2rem;
+    }
+
+}
